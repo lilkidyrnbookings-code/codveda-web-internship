@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>David's To-Do App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <main class="app">
+    <header class="top">
+      <div class="title">
+        <h1>To-Do List</h1>
+        <p class="sub">Simple tasks, saved automatically.</p>
+      </div>
+
+      <div class="badge">
+        <span id="count">0</span>
+        <small>tasks</small>
+      </div>
+    </header>
+
+    <section class="add">
+      <form id="taskForm" autocomplete="off">
+        <input id="taskInput" type="text" placeholder="Add a new task..." />
+        <button type="submit" id="addBtn">Add</button>
+      </form>
+
+      <div class="controls">
+        <button type="button" class="chip active" data-filter="all">All</button>
+        <button type="button" class="chip" data-filter="active">Active</button>
+        <button type="button" class="chip" data-filter="done">Done</button>
+        <button type="button" class="chip danger" id="clearDone">Clear Done</button>
+      </div>
+    </section>
+
+    <section class="list">
+      <ul id="taskList"></ul>
+      <p class="empty" id="emptyState">No tasks yet. Add your first one 👇</p>
+    </section>
+
+    <footer class="foot">
+      <p>Built by David • Level 2 Task (To-Do App + localStorage)</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: radial-gradient(circle at top, #2a5298, #1e3c72);
+  padding: 24px;
+  color: #111;
+}
+
+.app {
+  width: 100%;
+  max-width: 560px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+  padding: 22px 22px 14px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.title h1 {
+  font-size: 28px;
+  letter-spacing: 0.2px;
+}
+
+.sub {
+  margin-top: 6px;
+  color: #555;
+  font-size: 14px;
+}
+
+.badge {
+  display: grid;
+  place-items: center;
+  padding: 10px 14px;
+  border-radius: 12px;
+  background: rgba(0, 170, 255, 0.12);
+  color: #006b9d;
+  min-width: 82px;
+}
+
+.badge span {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.badge small {
+  font-size: 12px;
+}
+
+.add {
+  padding: 16px 22px 18px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+#taskForm {
+  display: flex;
+  gap: 10px;
+}
+
+#taskInput {
+  flex: 1;
+  padding: 12px 12px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  outline: none;
+  font-size: 15px;
+}
+
+#taskInput:focus {
+  border-color: rgba(0, 170, 255, 0.65);
+  box-shadow: 0 0 0 4px rgba(0, 170, 255, 0.12);
+}
+
+#addBtn {
+  padding: 12px 16px;
+  border: none;
+  border-radius: 10px;
+  background: #00aaff;
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+#addBtn:hover {
+  opacity: 0.95;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.chip {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  background: #fff;
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.chip.active {
+  border-color: rgba(0, 170, 255, 0.5);
+  background: rgba(0, 170, 255, 0.12);
+  color: #006b9d;
+  font-weight: 700;
+}
+
+.chip.danger {
+  border-color: rgba(255, 0, 0, 0.25);
+  color: #a40000;
+}
+
+.list {
+  padding: 16px 22px 10px;
+}
+
+#taskList {
+  list-style: none;
+  display: grid;
+  gap: 10px;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 12px;
+  border-radius: 12px;
+  background: #f6f8fb;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
+.check {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.text {
+  font-size: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.task.done .text {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.iconBtn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 6px 8px;
+  border-radius: 8px;
+}
+
+.iconBtn:hover {
+  background: rgba(0, 0, 0, 0.06);
+}
+
+.empty {
+  margin-top: 14px;
+  color: #666;
+  font-size: 14px;
+  text-align: center;
+  display: none;
+}
+
+.foot {
+  padding: 14px 22px 18px;
+  text-align: center;
+  color: #666;
+  font-size: 13px;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+@media (max-width: 520px) {
+  .top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #taskForm {
+    flex-direction: column;
+  }
+  #addBtn {
+    width: 100%;
+  }
+}
