@@ -3,19 +3,42 @@
 ## Author
 David Samba Kambinda
 
-## Level 1 – Static Website + JavaScript
-**Project:** Personal Portfolio Website  
-**Features:**
-- Multi-page website (Home, About, Contact)
-- Responsive design using CSS media queries
-- JavaScript form validation and DOM interaction
+## Overview
+This repository contains my completed tasks for the Codveda Web Development Internship.
 
-**Tech Used:** HTML, CSS, JavaScript
+---
 
-## Level 2 – To-Do List App (localStorage)
-**Project:** To-Do List Application  
+## Level 1 – Personal Portfolio Website
+**Tasks Completed:**  
+- Build a simple static website  
+- JavaScript form validation and DOM interaction  
+
 **Features:**
-- Add, delete, and mark tasks as completed
+- Multi-page site (Home, About, Contact)
+- Responsive design
+- Navigation between pages
+
+**Tech Used:**  
+HTML, CSS, JavaScript
+
+---
+
+## Level 2 – To-Do List Application
+**Tasks Completed:**  
+- Build a dynamic To-Do app using JavaScript  
+
+**Features:**
+- Add tasks
+- Delete tasks
+- Mark tasks as complete
 - Tasks persist after refresh using localStorage
 
-**Tech Used:** HTML, CSS, JavaScript, localStorage
+**Tech Used:**  
+HTML, CSS, JavaScript, localStorage
+
+---
+
+## Repository Structure
+- david-portfolio/
+- david-todo-app-level2/
+- docs/ (for GitHub Pages live site)
