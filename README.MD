@@ -1,7 +1,7 @@
 # Codveda Web Development Internship Projects
 
 ## Author
-David Durell
+David Samba Kambinda
 
 ## Level 1 – Static Website + JavaScript
 **Project:** Personal Portfolio Website  
